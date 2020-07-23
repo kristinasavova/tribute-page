@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'wizard_worldsimplified';
+    src: url('../fonts/wizardworldsimplified-kxr7-webfont.woff2') format('woff2'),
+         url('../fonts/wizardworldsimplified-kxr7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'wizard_worldsimplified';
+}

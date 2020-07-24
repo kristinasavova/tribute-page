@@ -1,12 +1,39 @@
 
-@font-face {
-    font-family: 'wizard_worldsimplified';
-    src: url('../fonts/wizardworldsimplified-kxr7-webfont.woff2') format('woff2'),
-         url('../fonts/wizardworldsimplified-kxr7-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    font-family: 'wizard_worldsimplified';
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: maroon;
 }
+
+h1, h2, h3, h4 {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+#main {
+    background: white;
+    max-width: 1024px;
+    margin: 2rem auto 3rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 10px;
+}
+
+@media (min-width: 769px) {
+    #main {
+        padding: 3rem 5rem;
+    }
+} 
+
+@media (min-width: 1025px) {
+
+}
+

@@ -13,12 +13,30 @@
             <h1 id="title">Professor Albus Percival Wulfric Brian Dumbledore</h1>
             <p>The greatest sorcerer in the world</p>
             <figure id="img-div">
-                <img id="image" src="photos/albus_d.jpg" alt="">
+                <img id="image" 
+                    srcset="photos/albus-d-small.jpg 436w,
+                            photos/albus-d-medium.jpeg 864w,
+                            photos/albus_d.jpg 940w"
+                    sizes="(max-width: 500px) 436px,
+                            (max-width: 1024px) 864px,
+                            940px"
+                    src="photos/albus_d.jpg" alt="" >
                 <figcaption id="img-caption">Albus Dumbledore in the Headmaster's Office in Hogwarts Castle</figcaption>
             </figure>
+            <nav>
+                <a href="#early-life">1881-1892 - Early life</a>
+                <a href="#hogwarts-years">1892-1899 - Hogwarts years</a>
+                <a href="#tragedy-and-romance">1899 - Tragedy and romance</a>
+                <a href="#early-career">1901-1925 - Early career</a>
+                <a href="#global-wizarding-war">1926-1945 - Global Wizarding War</a>
+                <a href="#aftermath">1946-1969 - Aftermath</a>
+                <a href="#first-wizarding-war">1970-1981 - First Wizarding War</a>
+                <a href="#between-the-wars">1981-1995 - Between the wars</a>
+                <a href="#second-wizarding-war">1995–1997 - Second Wizarding War</a>
+            </nav>
             <article id="tribute-info">
                 <h2>Biography</h2>
-                <section>
+                <section id="early-life">
                     <h3><time datetime="1881">1881</time>-<time datetime="1892">1892</time> - Early life</h3> 
                     <p>
                         Albus Percival Wulfric Brian Dumbledore was born to Kendra and Percival Dumbledore in the <time datetime="1881">summer of 1881</time>, in the village of Mould-on-the-Wold.
@@ -32,7 +50,7 @@
                         Kendra rebuffed all her neighbours, with the eventual exception of Bathilda Bagshot, preferring to be left alone: and Albus learned not to mention his sister or father in public.
                     </p>
                 </section>
-                <section>
+                <section id="hogwarts-years">
                     <h3><time datetime="1892">1892</time>–<time datetime="1899">1899</time> - Hogwarts years</h3>
                     <p>
                         Dumbledore began attending Hogwarts <time datetime="1892">in the autumn of 1892</time> and was sorted into <strong>Gryffindor</strong> house. His first year was met with much whispering about his father's crime.
@@ -53,7 +71,7 @@
                         and received the Gold Medal for Ground-Breaking Contribution to the International Alchemical Conference in Cairo.
                     </p>
                 </section>
-                <section class="clearfix">
+                <section id="tragedy-and-romance" class="clearfix">
                     <h3><time datetime="1899">1899</time> - Tragedy and romance</h3>
                     <p>
                         After graduating from Hogwarts <time datetime="1899-06">in June 1899</time>, Dumbledore planned to take the traditional "Grand Tour" of the world with his friend Doge.
@@ -79,7 +97,7 @@
                         Aberforth never knew of the <em>great guilt and regret</em> Albus would feel for the rest of his life.
                     </p>
                 </section>
-                <section>
+                <section id="early-career-at-hogwarts">
                     <h3><time datetime="1901">1901</time>-<time datetime="1925">1925</time> - Early career at Hogwarts</h3>
                     <p>
                         Shortly thereafter, Albus travelled to France and spent some time in Paris studying the ancient art and science of alchemy under the tutelage of Nicholas Flamel. 
@@ -89,7 +107,7 @@
                         Burdened by the secret knowledge of Grindelwald's imminent rise to power and wanting to rectify past mistakes, it was natural, that he felt drawn towards the job of Defence Against the Dark Arts instructor.
                     </p>
                 </section>
-                <section>
+                <section id="global-wizarding-war">
                     <h3><time datetime="1926">1926</time>-<time datetime="1945">1945</time> - Global Wizarding War</h3>
                     <p>
                         Together with his old student, Newt Scamander, Dumbledore discovered the Credence Barebone, the most powerful Obscurus ever recorded, but also contributed to the capture of Grindelwald, who had been disguised to find the Obscurus. 
@@ -110,11 +128,19 @@
                         Dumbledore defeated Grindelwald, and he was imprisoned, while Dumbledore kept the Elder Wand for himself. Celebrated worldwide as the hero, he was awarded the Order of Merlin (First Class), by Leonard Spencer-Moon's administration.
                     </p>
                     <figure>
-                        <img src="photos/crimes-of-grindelwald-dumbledore.jpeg" alt="">
+                        <img 
+                            srcset="photos/crimes-of-grindelwald-dumbledore-small.jpg 436w,
+                                    photos/crimes-of-grindelwald-dumbledore-medium.jpg 864w,
+                                    photos/crimes-of-grindelwald-dumbledore.jpeg 940w"
+                            sizes="(max-width: 500px) 436px,
+                                    (max-width: 1024px) 864px,
+                                    940px"
+                            src="photos/crimes-of-grindelwald-dumbledore.jpeg" 
+                            alt="" >
                         <figcaption>Middle-aged Albus Dumbledore</figcaption>
                     </figure>
                 </section>
-                <section>
+                <section id="aftermath">
                     <h3><time datetime="1946">1946</time>-<time datetime="1969">1969</time> - Aftermath</h3>
                     <p>
                         Resuming his career following this legendary event, Dumbledore taught several other students over the years, some of which would become staunchly loyal to him and what he stood for, whereas others would become enemies, allying themselves with Lord Voldemort. 
@@ -123,7 +149,7 @@
                         Dumbledore, who knew of Voldemort's illicit activities since he left Hogwarts and suspected that he might have meant to use the position as means of recruiting more followers, turned down his application.
                     </p>
                 </section>
-                <section>
+                <section id="first-wizarding-war">
                     <h3><time datetime="1970">1970</time>-<time datetime="1981">1981</time> - First Wizarding War</h3>
                     <p>
                         After Lord Voldemort started his first rise to power <time datetime="1970">in 1970</time>, Dumbledore founded the Order of the Phoenix, a secret organisation of witches and wizards willing to risk their lives to fight Voldemort and his Death Eaters.
@@ -133,7 +159,7 @@
                         This astonished Dumbledore, but as it turned out, the Death Eater Severus Snape had overheard most of the Prophecy but had been caught in the act of spying and ejected from the tavern by Aberforth Dumbledore. Dumbledore hired Trelawney in order to protect her from the Death Eaters.
                     </p>
                 </section>
-                <section>
+                <section id="between-the-wars">
                     <h3><time datetime="1981">1981</time>-<time datetime="1995">1995</time> - Between the wars</h3>
                     <p>
                         Shortly before the Potters' deaths, Dumbledore discovered that James's Cloak of Invisibility was, in fact, one of the Deathly Hallows. 
@@ -169,7 +195,7 @@
                         Dumbledore then began to suspect that Riddle's diary was in fact a Horcrux, and furthermore, considering the lack of care the Dark Lord had taken in protecting the diary, that he had created more than one.
                     </p>
                 </section>
-                <section class="clearfix">
+                <section id="second-wizarding-war" class="clearfix">
                     <h3><time datetime="1995">1995</time>–<time datetime="1997">1997</time> - Second Wizarding War</h3>
                     <p>
                         The Ministry of Magic immediately began to deny Dumbledore's claims that the Dark Lord had returned, starting a smear campaign designed to slander and vilify him. 
@@ -235,7 +261,8 @@
                 Read more on 
                 <a id="tribute-link" href="https://harrypotter.fandom.com/wiki/Albus_Dumbledore" target="_blank">harrypotter.fandom.com</a>
                 and 
-                <a href="https://en.wikipedia.org/wiki/Albus_Dumbledore" target="_blank">Wikipedia</a>
+                <a href="https://en.wikipedia.org/wiki/Albus_Dumbledore" target="_blank">Wikipedia</a><br>
+                <a href="#title">&#8679; Jumt to the top</a>
             </h4>
         </main>
     </body>

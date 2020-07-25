@@ -1,6 +1,6 @@
 
-* {
-    box-sizing: border-box;
+* { 
+    box-sizing: border-box; 
 }
 
 body {
@@ -42,7 +42,7 @@ h1 {
 }
 
 h4 {
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     padding-top: 1rem;
 }
 
@@ -58,14 +58,37 @@ blockquote {
     box-shadow: 0 0 5px #4B443C;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-top: -.7rem;
+}
+    nav > a {
+        text-decoration: none;
+        color: #4B443C;
+        font-size: 1rem;
+        border-bottom: dotted 1px rgba(75,68,60, .3);
+        padding: .5rem .5rem;
+        transition: background-color .4s cubic-bezier(.21,-0.3,.87,1.35), 
+                    color .4s cubic-bezier(.21,-0.3,.87,1.35);
+    }
+        nav > a:hover {
+            background-color: #4B443C;
+            color: #E4E5E8;
+        }
+
+        nav > a:last-child {
+            border-bottom: none;
+        }
+
 a {
     color: inherit;
     transition: color .5s ease-in-out;
 }
-
-a:hover {
-    color: #CC5500;
-}
+    a:hover {
+        color: #CC5500;
+    }
 
 #main {
     background: #E4E5E8;
@@ -80,6 +103,18 @@ a:hover {
     #main {
         padding: 2.5em 5em;
     }
+
+    nav {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-height: 14em;
+        justify-content: baseline;
+    }
+        nav > a, nav > a:last-child {
+            border: dotted 1px rgba(75,68,60, .3); 
+            border-radius: 5px;
+            margin: .3em .5em;
+        }
 
     .float-left {
         float: left;
@@ -101,7 +136,6 @@ a:hover {
 } 
 
 @media (min-width: 1025px) {
-    
     blockquote {
         margin-top: 2em;
     }

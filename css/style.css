@@ -39,8 +39,8 @@ h1, h2, h3, h4, figcaption, h1 ~ p {
 }
 
 h1 {
-    font-size: 1.6rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 h4 {
@@ -71,7 +71,7 @@ nav {
     nav > a, h4 > a:last-child {
         text-decoration: none;
         color: #4B443C;
-        font-size: 1rem;
+        font-size: 1.1rem;
         border-radius: 5px;
         border-bottom: dotted 1px rgba(75,68,60, .3);
         padding: 1.5rem .5rem;
@@ -98,7 +98,7 @@ a {
 
 #main {
     background: #E4E5E8;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
@@ -112,10 +112,6 @@ a {
 
     p, span, cite {
         font-size: 1.1rem;
-    }
-
-    #main {
-        padding: 1.5em 5em;
     }
 
     nav {
@@ -138,7 +134,11 @@ a {
     }
 
     blockquote {
-        margin-top: 1.5em;
+        margin-top: 2em;
+    }
+
+    #main {
+        padding: 2em 4em;
     }
 
     .float-left {
@@ -180,8 +180,15 @@ a {
             flex: 1 1 auto; 
             margin: .5em .5rem;
         }
+            nav > a:last-child {
+                flex-grow: 0;
+            }
     
     h4 > a:last-child {
         padding: .5em;
+    }
+
+    #main {
+        padding: 3em 6em;
     }
 }

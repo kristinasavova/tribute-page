@@ -24,10 +24,10 @@ img {
 }
 
 p, span, cite {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
     text-align: justify;
     padding-bottom: .5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 h1, h2, h3, h4, figcaption, h1 ~ p {
@@ -38,12 +38,14 @@ h1, h2, h3, h4, figcaption, h1 ~ p {
 }
 
 h1 {
-    line-height: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 h4 {
-    line-height: 1.7rem;
+    line-height: 1.75rem;
     padding-top: 1rem;
+    color: #232425;
 }
 
 blockquote {
@@ -62,59 +64,80 @@ nav {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    margin-top: -.7rem;
+    margin: -1.5rem 0 -.3rem 0;
 }
-    nav > a {
+    nav > a, h4 > a:last-child {
         text-decoration: none;
         color: #4B443C;
         font-size: 1rem;
+        border-radius: 5px;
         border-bottom: dotted 1px rgba(75,68,60, .3);
-        padding: .5rem .5rem;
+        padding: 1.5rem .5rem;
         transition: background-color .4s cubic-bezier(.21,-0.3,.87,1.35), 
                     color .4s cubic-bezier(.21,-0.3,.87,1.35);
     }
-        nav > a:hover {
+        nav > a:hover, nav > a:last-child:hover, h4 > a:last-child:hover {
             background-color: #4B443C;
             color: #E4E5E8;
         }
 
-        nav > a:last-child {
+        nav > a:last-child, h4 > a:last-child {
             border-bottom: none;
         }
 
 a {
-    color: inherit;
+    color: #9A0022;
+    text-decoration: none;
     transition: color .5s ease-in-out;
 }
     a:hover {
-        color: #CC5500;
+        color: #FE0038;
     }
 
 #main {
     background: #E4E5E8;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
 }
 
 @media (min-width: 769px) {
 
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p, span, cite {
+        font-size: 1.1rem;
+    }
+
     #main {
-        padding: 2.5em 5em;
+        padding: 1.5em 5em;
     }
 
     nav {
         flex-wrap: wrap;
         flex-direction: row;
-        max-height: 14em;
-        justify-content: baseline;
+        margin: -.5em 0 0 0;
     }
         nav > a, nav > a:last-child {
-            border: dotted 1px rgba(75,68,60, .3); 
-            border-radius: 5px;
+            background: rgba(75,68,60, .2);
+            box-shadow: 0 0 5px #4B443C;
             margin: .3em .5em;
+            flex: 1 1 210px;
         }
+    
+    h4 > a:last-child {
+        background: rgba(75,68,60, .2);
+        box-shadow: 0 0 5px #4B443C;
+        margin: .3em;
+        display: inline-block;
+    }
+
+    blockquote {
+        margin-top: 1.5em;
+    }
 
     .float-left {
         float: left;
@@ -136,7 +159,27 @@ a {
 } 
 
 @media (min-width: 1025px) {
-    blockquote {
-        margin-top: 2em;
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    p, span, cite {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    nav {
+        margin: 0; 
+    }
+        nav > a, nav > a:last-child {
+            padding: .5em;
+            flex: 1 1 auto; 
+            margin: .5em .5rem;
+        }
+    
+    h4 > a:last-child {
+        padding: .5em;
     }
 }

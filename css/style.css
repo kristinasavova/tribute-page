@@ -17,6 +17,7 @@ figure {
 
 img {
     border-radius: 5px;
+    display: block;
     box-shadow: 0 0 5px #232425;
     margin: .5rem auto 1rem auto;
     max-width: 100%;

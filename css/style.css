@@ -6,7 +6,7 @@ html { font-size: 16px; }
 body {
     font-family: 'Open Sans', sans-serif;
     background: #4D0011;
-    color: #232425;
+    color: #4B443C;
 }
 
 figure {
@@ -31,24 +31,36 @@ p, span, cite {
     line-height: 150%;
 }
 
-h1, h2, h3, h4, figcaption, h1 ~ p {
+h1, h2, h3, h4, figcaption {
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
     color: #4D0011;
     text-align: center;
-    line-height: 110%;
 }
 
-h1 { font-size: 1.602em; }
+h1 { 
+    font-size: 1.296em;
+    line-height: 110%;
+}
+    h1 ~ p {
+        font-family: 'Libre Baskerville', serif;
+        text-align: center;
+        font-size: 1.1rem;
+    }
 
-h2 { font-size: 1.424em; }
+h2 { font-size: 1.215em; }
 
-h3 { font-size: 1.266em; }
+h3 { 
+    font-size: 1.138em; 
+    margin: 1.5rem 0 -.5rem 0;
+    line-height: 120%;
+}
 
 h4 {
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.067em;
     color: #232425;
+    line-height: 140%;
 }
     h4 > a:last-child {
         display: inline-block;
@@ -57,8 +69,8 @@ h4 {
         font-family: 'Open Sans', sans-serif;
         background: rgba(75,68,60, .2);
         box-shadow: 0 0 5px #4B443C;
-        padding: 1.5em;
-        margin: .3em;
+        padding: 1.5rem;
+        margin: .3rem;
     }
 
 blockquote {
@@ -66,14 +78,13 @@ blockquote {
     margin: 0;
     display: inline-block;
     text-align: left;
-    padding: 1.5rem;
+    padding: .5rem 1.2rem;
     width: auto;
-    text-align: justify;
     color: #4B443C;
-    background: rgba(75,68,60, .2);
-    border-radius: 10px;
-    box-shadow: 0 0 5px #4B443C;
 }
+    hr {
+        width: 55%;
+    }
 
 nav {
     display: flex;
@@ -101,11 +112,16 @@ nav {
         }
 
 a {
-    color: #9A0022;
-    text-decoration: none;
-    transition: color .5s ease-in-out;
+    color: inherit;
+    text-decoration: underline dotted;
+    transition: color .5s ease-in-out, font-weight .5s ease-in-out;
 }
-    a:hover { color: #FE0038; }
+    a:hover,
+    a:focus { 
+        text-decoration: none; 
+        color: #610015;
+        font-weight: bold;
+    }
 
 #main {
     background: #E4E5E8;
@@ -118,6 +134,7 @@ a {
 @media (min-width: 320px) {
     
     html { font-size: calc(16px + 6 * ((100vw - 320px) / 680)); }
+
 }
 
 @media (min-width: 769px) {
@@ -167,16 +184,19 @@ a {
 
     h2 { font-size: 1.424em; }
 
-    h3 { font-size: 1.266em; } 
+    h3 { 
+        font-size: 1.266em; 
+        margin: 1.75rem 0 -.25rem 0;
+    } 
 
     h4 { font-size: 1.125em; } 
 
-    nav { margin: 1.25em 0; }
+    nav { margin: 1.75em 0 2em 0; }
         
     nav > a, nav > a:last-child {
             padding: .5em;
             flex: 1 1 auto; 
-            margin: .5em .5em;
+            margin: .5em;
         }
             nav > a:last-child { flex-grow: 0; }
     

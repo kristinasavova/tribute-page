@@ -134,7 +134,6 @@ a {
 @media (min-width: 320px) {
     
     html { font-size: calc(16px + 6 * ((100vw - 320px) / 680)); }
-
 }
 
 @media (min-width: 769px) {
